@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+  }
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #e1e1e6;
+    --title-color: #04d361;
+    --form-color: #a8a8a8;
+    --bg-button-color: #8257e5;
+    --error-email-color: hsl(0, 100%, 46%);
+}
+
+body{
+    background: url(assets/image.jpg) no-repeat;
+    background-position:top right;
+    background-size: 70%;
+}
+
+div.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    padding: 3em 5em;
+    background: var(--body-bg-color);
+    position: relative;
+}
+
+header {
+    margin-bottom: 5.625em;
+}
+
+.container .text h2 {
+    color: var(--title-color);
+    font-size: 1.8em;
+    margin-bottom: 0.7em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.container .text h3 {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    font-weight: 700;
+}
+
+.container .text p {
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.container .text {
+    margin-bottom: 3.125em;
+}
+
+.container .email {
+    margin-bottom: 3.5em;
+}
+
+.container .email form label {
+    display: block;
+    color: var(--form-color);
+    font-weight: 700;
+    font-size: 0.875;
+    margin-bottom: 1.0675em;
+}
+
+.container .email form input[type='email'] {
+    width: 60rem;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    border-left: 10px solid var(--title-color);
+}
+
+.container .email .input-bt {
+    display: inline-flex;
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+  }
+
+.container .email .input-bt button {
+    display: flex;
+    align-items: center;
+    background: var(--bg-button-color);
+    border: none;
+    padding: 0.75em;
+    cursor: pointer;
+}
+
+.another {
+    margin-top: 5em;
+}
+
+.another a {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    color: var(--bg-button-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.another a img {
+    margin-left: 0.3125rem;
+}
+
+.another a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--bg-button-color);
+    position: absolute;
+    top: 1.5em;
+    bottom: -1em;
+    transition: width 0.3s;
+}
+
+.another a:hover::before {
+    width: 100%;
+  }
